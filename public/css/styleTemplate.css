@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@600&family=Fraunces:opsz,wght@9..144,700&family=Great+Vibes&family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@0,300;0,400;1,700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+body 
+{
+    background-color: rgb(249, 249, 251);
+}
+
+.navbar-brand
+{
+    font-weight: 600 !important;
+    font-size: 35px;
+    color:rgb(112, 66, 50);
+}
+
+.sidebar 
+{
+    min-height: 100vh;
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 18%);
+}
+
+nav
+{
+    background-color: transparent;
+    /*box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 18%);*/
+}
+
+
+ul  li 
+{
+    list-style-type: none;
+    margin: 5% 0%;
+}
+
+.sidebar ul li a 
+{
+    text-decoration: none;
+    color:black;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+.sidebar ul li a i 
+{
+    font-size: 25px;
+}
+
+.sidebar ul li a p 
+{
+    margin-top: 2%;
+}
+.logo h2
+{
+    font-family: 'Great Vibes', cursive;
+    color:rgb(112, 66, 50);
+    margin: 10% 0%;
+}
+
+
+.active
+{
+    background-color:rgb(112, 66, 50);
+    width: 70%;
+    min-height: 9vh;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+     margin: auto;
+     margin-bottom:10%;
+}
+
+.active a 
+{
+    margin: auto;
+  
+}
+
+.active a p
+{
+    color: white;
+    margin-top: 2%;
+}
+
+.active a i
+{
+    margin-top: 8%;
+    color: white;
+}
+

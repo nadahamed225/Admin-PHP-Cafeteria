@@ -1,0 +1,50 @@
+.myaccordion {
+    margin: 50px auto;
+    box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 9%);
+  }
+  
+  .myaccordion .card,
+  .myaccordion .card:last-child .card-header {
+    border: none;
+  }
+  
+  .myaccordion .card-header {
+    border-bottom-color:rgb(112, 66, 50);
+    background: transparent;
+  }
+  
+  .myaccordion .fa-stack {
+    font-size: 18px;
+  }
+  
+  .myaccordion .btn {
+    width: 100%;
+    font-weight: bold;
+    color:rgb(112, 66, 50);
+    padding: 0;
+  }
+  
+  .myaccordion .btn-link {
+    text-decoration: none;
+  }
+  
+  .myaccordion li + li {
+    margin-top: 10px;
+  }
+
+  form
+  {
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 /18%);
+  }
+
+  img 
+  {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  
