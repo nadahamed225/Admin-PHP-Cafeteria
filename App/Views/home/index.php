@@ -192,11 +192,9 @@ function openOrderDetails(id,nameProduct) {
         let totalprice=document.getElementById("totalPrice") ;
         totalprice.innerText=data["totalPrice"];
         let totalPriceOrder=document.getElementById("totalPriceOrder") ;
-    totalPriceOrder.value=data["totalPrice"];
+        totalPriceOrder.value=data["totalPrice"];
         const rowid = document.getElementById("id"+data["name"]);
         rowid.remove();
-      
-
         const rowhr = document.getElementById("hr"+data["name"]);
         rowhr.remove();
         

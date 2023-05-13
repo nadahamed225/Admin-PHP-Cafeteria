@@ -78,18 +78,31 @@ class UsersController extends Controller
                 $formatData['email']=$email;
                 $errors['email'] = "Invalid email format";
             }else{
-                
                 $formatData['email']=$email;
                 // Check email uniqueness
-                $query = "select COUNT(*) from `room` WHERE email = ?";
+                $query = "select COUNT(*) from `user` WHERE email = :email";
 
                 $stmt = $pdo->prepare($query);
-                $stmt->execute([$email]);
-                $count = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                $stmt->bindParam(':email', $email,PDO::PARAM_STR);
+                $stmt->execute();
 
-                if ($count > 0) {
+
+                $count = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                if (+$count[0]["COUNT(*)"] > 0) {
                     $errors['email'] = "Email already exists";
-                }
+                    }
+                
+//                $formatData['email']=$email;
+//                // Check email uniqueness
+//                $query = "select COUNT(*) from `room` WHERE email = ?";
+//
+//                $stmt = $pdo->prepare($query);
+//                $stmt->execute([$email]);
+//                $count = $stmt->fetchAll(PDO::FETCH_ASSOC);
+//
+//                if ($count > 0) {
+//                    $errors['email'] = "Email already exists";
+//                }
             }
             if(isset($password) and empty($password)){
                 $errors['password']='must enter password';

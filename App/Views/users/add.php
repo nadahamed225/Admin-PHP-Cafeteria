@@ -36,7 +36,7 @@
         <label for="exampleInputPassword1" class="form-label">confirmPassword</label>
         <input type="password" class="form-control" name="confirmpassword" id="exampleInputPassword2">
     </div>
-    <span class="text-danger"> <?php if(isset($errors['password'])) echo $errors['password']; ?> </span>
+    <span class="text-danger"> <?php if(isset($errors['password'])) echo $errors['password']; ?> </span> <br>
     <input type="number" name="userroomNumber" id="userroomNumber" hidden>
 
     <div class="btn-group">
