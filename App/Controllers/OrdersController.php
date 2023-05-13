@@ -106,6 +106,7 @@ if ($res === false) {
                 // Insert each order item into the database
                 if (isset($_SESSION['cart'])) {
                     foreach ($_SESSION['cart'] as $item) {
+                        var_dump($item['id']);
                         $pdo = new PDO($dsn, $username, $password);
                          // Prepare the INSERT SQL statement
                         $sql = "INSERT INTO `orderdetails` (productID, orderID,quantity,totalPriceProduct) VALUES (:productID, :orderID,:quantity,:totalPriceProduct)";

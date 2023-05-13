@@ -193,7 +193,6 @@ class ProductsController extends Controller
         $res=$select_stmt->execute();
         $dataroom = $select_stmt->fetchAll(PDO::FETCH_ASSOC);
         $data['rooms']=$dataroom;
-
         ///search
         if($_SERVER['REQUEST_METHOD']=='POST')
         {
@@ -205,8 +204,6 @@ class ProductsController extends Controller
             }
 
         }
-
-
         return $this->view('home/index',$data);
     }
 
